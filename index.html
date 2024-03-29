@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+ <title>Frontend Mentor | Order summary card</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+    @layer utilities {
+      .bg-url {
+        background-image: url(images/pattern-background-desktop.svg);
+    	background-position: top;
+    	background-repeat: no-repeat;
+   	background-size: 100vw 50vh;
+      }
+      .card_header {
+  	background-image: url(images/illustration-hero.svg);
+  	background-position: top;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	border-radius: 20px 20px 0 0;
+	}
+    }
+  </style>
+    
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors:
+           {
+            'pale-blue': 'hsl(225, 100%, 94%)',
+            'bright-blue':'hsl(245, 75%, 52%)',
+            'btn-hover':'hsla(245, 75%, 52%, .5)',
+	    'neutral-very-pale-blue': 'hsl(225, 100%, 98%)',
+	    'neutral-desaturated-blue': 'hsl(224, 23%, 55%)',
+	    'neutral-dark-blue': 'hsl(223, 47%, 23%)',
+          },
+          fontFamily:{
+          	'red-hat':['Red Hat Display', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="w-full h-full min-h-[768px] flex justify-center items-center font-red-hat bg-pale-blue">
+  <main class="w-full h-full p-4 -mt-8 flex justify-center items-center bg-url">
+    <div class="w-[95%] h-[570px] mt-12 sm:max-w-[450px] sm:min-w-[350px] sm:h-[696px] flex flex-wrap justify-center text-center bg-white shadow-[0_40px_30px_-10px_rgba(23, 65, 97, 0.1)] rounded-[20px] transtion duration-300 ease-out">
+      <div class="card_header w-full h-[160px] sm:h-[220px] transtion duration-300 ease-out">
+      </div>
+      <section class="w-full h-fit sm:h-[480px] py-8 px-6 sm:py-[2.9rem] sm:px-12  flex flex-col items-center transition duration-400 ease-out">
+        <h1 class="mb-4 text-center font-black text-2xl sm:text-3xl text-neutral-dark-blue">Order Summary</h1>
+        <p class="w-[240px] sm:w-full mb-5 text-sm sm:text-base font-semibold text-neutral-desaturated-blue">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+        <div class="w-full h-[80px] sm:h-[100px] py-0 px-4 sm:px-6 mb-6 sm:mb-8 flex items-center justify-between text-left rounded-[12px] bg-neutral-very-pale-blue">
+          <div class="w-full flex justify-between items-center">
+            <figure class="flex">
+              <img src="images/icon-music.svg" class="w-12 object-contain" alt="music icon">
+              <div class="ml-5">
+                <h2 class="text-sm sm:text-base mb-1 font-bold text-neutral-dark-blue">Annual Plan</h2>
+                <p class="text-sm sm:text-base font-semibold text-neutral-desaturated-blue">$59.99/year</p>
+              </div>
+            </figure>
+            <a href="#" class="text-bright-blue font-bold text-sm sm:text-base duration-150 ease-out underline hover:text-btn-hover hover:no-underline  ">Change</a>
+          </div>
+        </div>
+        <button class="w-full p-3 mb-6 sm:mb-8 text-white bg-bright-blue border-none rounded-[12px] font-semibold text-base shadow-[0_20px_20px_0px_rgba(39, 10, 170, 0.17)] cursor-pointer transition duration-150 ease-out hover:bg-btn-hover">Proceed to Payment</button>
+        <a class="text-neutral-desaturated-blue font-bold text-bases duration-150 ease-out hover:text-neutral-dark-blue" href="#">Cancel Order</a>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
