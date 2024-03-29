@@ -32,8 +32,8 @@ The Order summary card challenge tasks participants with building a user interfa
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-challenge-oO1TEB-lL3)
-- Live Site URL: [Live Demo](https://testimonials-grid-section-main-dun.vercel.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/order-summary-card-challenge-using-tailwind-css-TgCviL44lg)
+- Live Site URL: [Live Demo](https://order-summary-component-tailwindcss-navy.vercel.app/)
 
 ## My process
 
